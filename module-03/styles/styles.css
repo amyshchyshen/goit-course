@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Playfair Display", serif;
+	color: #626262;
+	font-size: 14px;
+}
+
+.container {
+	width: 900px;
+	margin: 0 auto;
+}
+
+.header {
+	padding: 80px 0 100px;
+}
+
+.list {
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+	list-style: none;
+}
+
+.nav-link {
+	display: inline-block;
+}
+
+.nav-link:not(:last-child) {
+	margin-right: 120px;
+}
+
+.list-link {
+	text-transform: uppercase;
+    text-decoration: none;
+    line-height: 24px;
+    font-family: "Playfair Display", serif;
+    color:  #626262;
+	font-size: 14px;
+} 
+
+.nav-link:hover a,
+.nav-link:focus {
+	color: #03a9f4
+}
+	
+.gallery{
+	font-size: 0;
+}
+
+.article {
+	display: inline-block;
+	width: 420px;
+	font-size: 14px;
+	margin-right: 60px;
+}
+
+.article:nth-of-type(2n) {
+	margin-right: 0;
+}
+
+.article:not(:nth-last-child(-n+2)) {
+	margin-bottom: 130px;
+}
+
+.art-category {
+	font-family: Ubuntu, light;
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #b4ad9e;
+	font-weight: normal;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+	 
+.article-heading {
+	font-size: 30px;
+    margin-bottom: 36px;
+    font-weight: normal;
+}
+
+.article-note {
+	line-height: 24px;
+    margin: 0;
+}
+
+.footer {
+	text-align: center;
+	padding-bottom: 70px;
+	padding-top: 55px
+}
+
+.footer-button {
+	margin: 0;
+	padding: 20px 35px;
+	font-family: 'Playfair Display', serif;
+	color:  #626262;
+    font-size: 20px;
+    line-height: 24px;
+    background: none;
+    text-decoration: none;
+    border: 1px solid #626262;
+}
+
+.footer-button:hover,
+.footer-button:focus {
+    color: #03a9f4;
+    border-color: #03a9f4;
+    cursor: pointer;
+}
+
+.visually-hidden {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	padding: 0;
+	border: 0;
+	height: 1px; 
+	width: 1px; 
+	overflow: hidden;
+}
+
