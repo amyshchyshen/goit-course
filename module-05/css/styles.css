@@ -273,16 +273,16 @@ img {
     text-transform: uppercase;
     color: #fff;
     padding: 17px 15px;
-  }
+}
   
   .icon-wrapper:hover {
     background: #1abc9c;
     border-color: transparent;
-  }
+}
   
   .icon-cart:hover {
     background: #323232;
-  }
+}
   
 
 /* PRODUCT PRICE */
