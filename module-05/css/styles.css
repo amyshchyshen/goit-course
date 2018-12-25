@@ -16,7 +16,7 @@ img {
     object-fit: cover;
 }
 .container {
-    width: 1600px;
+    width: 1170px;
     margin: 0 auto;
 }
 
@@ -119,12 +119,12 @@ img {
 }
 
 .left-arrow {
-    left: 245px;
+    left: 120px;
     transform: translateY(-70%);
 }
 
 .right-arrow {
-    right: 245px;
+    right: 120px;
     transform-origin: center;
     transform: translateY(-70%);
 }
@@ -344,9 +344,15 @@ img {
     color: #fefefe;
 }
 
-.footer-span {
+.footer-link {
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     line-height: 28px;
+    text-decoration: none;
+    color: #fefefe;
+}
+
+.footer-link:hover,
+.footer-link:focus {
     color: #46bfa9;
 }
