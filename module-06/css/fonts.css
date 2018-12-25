@@ -1,0 +1,66 @@
+/* Montserrat */
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Montserrat/montserrat-v12-latin-regular.eot'); 
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+         url('../fonts/Montserrat/montserrat-v12-latin-regular.woff2') format('woff2'), 
+         url('../fonts/Montserrat/montserrat-v12-latin-regular.woff') format('woff'), 
+         url('../fonts/Montserrat/montserrat-v12-latin-regular.ttf') format('truetype'), 
+         url('../fonts/Montserrat/montserrat-v12-latin-regular.svg#Montserrat') format('svg'); 
+  }
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/Montserrat/montserrat-v12-latin-700.eot'); 
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+         url('../fonts/Montserrat/montserrat-v12-latin-700.woff2') format('woff2'), 
+         url('../fonts/Montserrat/montserrat-v12-latin-700.woff') format('woff'),
+         url('../fonts/Montserrat/montserrat-v12-latin-700.ttf') format('truetype'),
+         url('../fonts/Montserrat/montserrat-v12-latin-700.svg#Montserrat') format('svg');
+  }
+
+/* Roboto */
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/Roboto/roboto-v18-latin-300.eot'); 
+    src: local('Roboto Light'), local('Roboto-Light'),
+         url('../fonts/Roboto/roboto-v18-latin-300.woff2') format('woff2'), 
+         url('../fonts/Roboto/roboto-v18-latin-300.woff') format('woff'),
+         url('../fonts/Roboto/roboto-v18-latin-300.ttf') format('truetype'), 
+         url('../fonts/Roboto/roboto-v18-latin-300.svg#Roboto') format('svg'); 
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Roboto/roboto-v18-latin-regular.eot'); 
+  src: local('Roboto'), local('Roboto-Regular'),
+       url('../fonts/Roboto/oboto-v18-latin-regular.woff2') format('woff2'), 
+       url('../fonts/Roboto/oboto-v18-latin-regular.woff') format('woff'), 
+       url('../fonts/Roboto/oboto-v18-latin-regular.ttf') format('truetype'), 
+       url('../fonts/Roboto/oboto-v18-latin-regular.svg#Roboto') format('svg');
+}
+
+/* Kaushan Script */
+
+@font-face {
+    font-family: 'Kaushan Script';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Kaushan Script/kaushan-script-v6-latin-regular.eot'); 
+    src: local('Kaushan Script'), local('KaushanScript-Regular'),
+         url('../fonts/Kaushan Script/kaushan-script-v6-latin-regular.eot?#iefix') format('embedded-opentype'), 
+         url('../fonts/Kaushan Script/kaushan-script-v6-latin-regular.woff2') format('woff2'), 
+         url('../fonts/Kaushan Script/kaushan-script-v6-latin-regular.woff') format('woff'), 
+         url('../fonts/Kaushan Script/kaushan-script-v6-latin-regular.ttf') format('truetype'), 
+         url('../fonts/Kaushan Script/kaushan-script-v6-latin-regular.svg#KaushanScript') format('svg');
+  }

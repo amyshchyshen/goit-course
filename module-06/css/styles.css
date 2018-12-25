@@ -1,0 +1,344 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+/* COMMON */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title {
+    position: relative;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 38px;
+    margin-bottom: 35px;
+}
+
+.title::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #f38181;
+}
+
+.subtitle {
+    text-align: center;
+    font-family: "Kaushan Script", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 14px;
+}
+
+/* NAVIGATION */
+
+.header {
+    padding: 38px 10px 114px;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.nav-list {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    justify-content: space-between;
+}
+
+
+.list-item:last-child {
+    margin-right: -30px;
+}
+
+.list-link {
+    position: relative;
+    text-decoration: none;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #95e1d3;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 30px;
+    padding-bottom: 16px;
+    transition: color 200ms linear;
+}
+
+.list-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 50%;
+    height: 3px;
+    background: #f38181;
+    opacity: 0;
+}
+
+.list-item:hover .list-link::after,
+.list-item:focus .list-link::after {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+.list-link:hover,
+.list-link:focus {
+    color: #f38181;
+}
+
+.logo-link {
+    text-decoration: none;
+}
+
+.logo-title {
+    font-family: Montserrat, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #95e1d3;
+}
+
+/* SERVICES SECTION */
+
+.services-section {
+    padding-bottom: 70px;
+}
+
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.services-item {
+    width: 380px;
+    position: relative;
+    padding-left: 80px;
+    margin: 30px 20px 70px 0;
+}
+
+.services-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.services-title {
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+
+.services-text {
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #999999;
+}
+
+.service-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 32px;
+    width: 32px;
+    background-repeat: no-repeat;
+    transform: translateX(50%);
+}
+
+/* TEAM SECTION */
+
+.team-section {
+    padding: 23px 0 80px;
+}
+
+.team-section-text {
+    width: 960px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 96px;
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #999999;
+}
+
+.item-cards-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-list {
+    width: 380px;
+    text-align: center;
+}
+
+.team-list:not(:last-child) {
+    margin-right: 30px;
+}
+
+.team-list-card {
+    position: relative;
+}
+
+.team-list-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #95e1d3;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.card {
+    transition: opacity 200ms linear, transform 200ms linear;
+    display: block;
+    object-fit: cover;
+}
+
+/* CARD MENU */
+
+.icon-social-container {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 200ms linear, transform 200ms linear;
+    background: linear-gradient(to top, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9));
+}
+
+.icon-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    background-color: #fce38a;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-color 200ms linear;
+}
+
+.icon-social:not(:last-child) {
+    border-right: 1px solid #f9bd87;
+}
+
+.icon-social:hover,
+.icon-social:focus {
+    background-color: #95e1d3;
+    cursor: pointer;
+}
+
+.team-list-card:hover .card,
+.team-list-card:hover .icon-social-container {
+    transform: translateX(-10px) translateY(-10px);
+    opacity: 1;
+}
+
+.team-name {
+    margin-top: 30px;
+    font-size: 14px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.team-job {
+    margin-top: 10px;
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 24px;
+    color: #999999;
+}
+
+/* FOOTER */
+
+.footer {
+    border-top: 1px solid #999999;
+}
+
+.footer-wrapper {
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+}
+
+.copyright {
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333333;
+}
+
+.copyright span {
+    color: #f38181;
+}
+
+input[type="email"] { 
+  height: 38px;
+  width: 228px;
+  border: 1px solid #d9d9d9;
+  font-family: Roboto, sans-serif;
+  line-height: 25px;
+  font-size: 15px;
+  padding-left: 12px;
+  border-right: 0;
+}
+
+input[type="placehoder"] {
+    color: #d9d9d9;
+}
+
+input[type="submit"] {
+  font-family: Montserrat, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 14px;
+  height: 40px;
+  width: 150px;
+  border: none;
+  background-color: #95e1d3;
+  transition: background-color 200ms linear;
+}
+
+input[type="submit"]:hover {
+  background-color: #f38181;
+  cursor: pointer;
+}
