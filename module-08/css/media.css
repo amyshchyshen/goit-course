@@ -40,6 +40,18 @@
         width: 404px;
         margin-bottom: 36px;
     }
+
+    .second-item {
+        order: 2;
+    }
+
+    .third-item {
+        order: 1;
+    }
+
+    .forth-item {
+        order: 3;
+    }
 }
 
 @media (min-width: 992px) {
@@ -72,6 +84,18 @@
     .partner-section-title {
         width: 404px;
         margin-bottom: 36px;
+    }
+
+    .second-item {
+        order: 2;
+    }
+
+    .third-item {
+        order: 1;
+    }
+
+    .forth-item {
+        order: 3;
     }
 
 }
