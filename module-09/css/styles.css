@@ -51,6 +51,7 @@ li {
     font-family: "Montserrat", sans-serif;
     color: #ffffff;
     font-size: 20px;
+    text-decoration: none;
 }
 
 .reg-buttons {
@@ -73,6 +74,8 @@ li {
 .reg-btn:hover,
 .reg-btn:focus {
     border: 2px solid #fff;
+    text-decoration: none;
+    color: #fff;
 }
 
 .title {
@@ -112,6 +115,8 @@ li {
 
 .header-btn:hover,
 .header-btn:focus {
+    background-color: #fff;
+    color:#ff4e50;
     border: 2px solid #fff;
 }
 
@@ -208,7 +213,8 @@ li {
 
 .other-btn:hover,
 .other-btn:focus {
-    border: 5px solid #ff4e50;
+    background-color:  #ff4e50;
+    color: #fff;
 }
 
 @media (min-width: 768px) {
