@@ -1,7 +1,7 @@
 /* COMMON */
 
 .wrapper {
-    max-width: 1180px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -182,7 +182,7 @@
 }
 
 .services__item {
-    width: 380px;
+    width: 300px;
     position: relative;
     padding-left: 80px;
     margin: 30px 20px 70px 0;
