@@ -1,4 +1,13 @@
 /*
    Import partials below
 */
-@import './normalize';
+@import 'helpers/variables.scss';
+@import 'reset';
+
+//Components// 
+@import 'components/base';
+@import 'components/header';
+@import 'components/services-section';
+@import 'components/team-section';
+@import 'components/social-menu';
+@import 'components/footer';

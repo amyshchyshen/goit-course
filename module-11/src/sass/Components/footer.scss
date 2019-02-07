@@ -1,0 +1,56 @@
+.footer {
+    border-top: 1px solid #999;
+  
+    .&-wrapper {
+        padding: 0 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 64px;
+    }
+    .&__copyright {
+        font-family: $main-title-font;
+        font-size: 14px;
+        font-weight: 400;
+        color: #333;
+    }
+
+    .&__link {
+        color: $secondary-bg-color;
+        text-decoration: none;
+    }
+}
+.form__email { 
+    height: 38px;
+    width: 228px;
+    border: 1px solid #d9d9d9;
+    font-family: $main-page-font;
+    line-height: 25px;
+    font-size: 15px;
+    padding-left: 12px;
+    border-right: 0;
+
+    .&[type="placehoder"] {
+        color: #d9d9d9;
+    }
+
+}
+
+
+.form__submit {
+    font-family: $main-title-font;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $header-text-color;
+    font-size: 14px;
+    height: 40px;
+    width: 150px;
+    border: none;
+    background-color: #95e1d3;
+    transition: background-color 200ms linear;
+
+    .&:hover {
+      background-color: $secondary-bg-color;
+      cursor: pointer;
+    }
+}
